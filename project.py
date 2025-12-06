@@ -46,7 +46,8 @@ class ResourceSchedulerGUI:
         self.updating = True
 
         # Simulated memory limit
-        self.total_memory_mb = 2048  # cap to 2048 MB
+        #memory limit updated to 4096 MB
+        self.total_memory_mb = 4096  # cap to 2048 MB
         
         # Style
         self.style = ttk.Style()
@@ -314,6 +315,7 @@ class ResourceSchedulerGUI:
     # Stop
     # -------------------------
     def stop(self): self.updating=False
+
 
 # -------------------------
 # Main
